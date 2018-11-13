@@ -32,4 +32,4 @@ new_links = json.dumps({
 g = Github(credentials['github'])
 repo = g.get_repo('petetalksweb/StreetArtTab')
 contents = repo.get_contents('unsplashLinks.json', ref='master')
-repo.update_file(contents.path, 'new links', new_links, contents.sha, branch='master')
+repo.update_file(contents.path, 'new links', new_links, contents.sha, branch='gh-pages')
