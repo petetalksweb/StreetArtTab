@@ -10,7 +10,8 @@ def create_new_img_objs(response):
         transformed_image_array.append({
             'url': image['urls']['raw'],
             'link': image['user']['links']['html'],
-            'name': image['user']['name']
+            'name': image['user']['name'],
+            'description': image['description'],
         })
     return transformed_image_array
 
@@ -31,5 +32,5 @@ new_links = json.dumps({
 
 g = Github(credentials['github'])
 repo = g.get_repo('petetalksweb/StreetArtTab')
-contents = repo.get_contents('unsplashLinks.json', ref='master')
+contents = repo.get_contents('unsplashLinks.json', ref='gh-pages')
 repo.update_file(contents.path, 'new links', new_links, contents.sha, branch='gh-pages')

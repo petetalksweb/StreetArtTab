@@ -35,7 +35,9 @@ const setup = (imgsData) => {
     } else {
       img.url += '&h=1000'
     }
-    document.getElementsByTagName('html')[0].style.backgroundImage = 'url("' + img.url + '")';
+    const photoElement = document.getElementById('photo');
+    photoElement.style.backgroundImage = 'url("' + img.url + '")';
+    photoElement.setAttribute('aria-label', img.description);
     setPhotoCredit(img);
   }
 }
