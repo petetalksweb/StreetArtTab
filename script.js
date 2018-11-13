@@ -27,9 +27,7 @@ const setPhotoCredit = (img) => {
   photoCreditSection.style.display = 'inline'
 }
 const setup = (imgsData) => {
-  console.log(imgsData);
   if(imgsData) {
-    console.log(1);
     const orientation = getScreenOrientation();
     const img = imgsData[orientation][randomInRange(0, 29)];
     if(orientation === 'landscape') {
