@@ -8,7 +8,7 @@ var runSequence = require('run-sequence');
 var htmlmin = require('gulp-htmlmin');
 
 gulp.task('default', function(callback) {
-    runSequence('clean', ['minify', 'moveLinks'], callback)
+    runSequence('clean', ['minify', 'moveManifest'], callback)
 });
 
 gulp.task('clean', function() {
@@ -24,7 +24,7 @@ gulp.task('minify', function() {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('moveLinks', function() {
-    return gulp.src('unsplashLinks.json')
+gulp.task('moveManifest', function() {
+    return gulp.src('manifest.json')
         .pipe(gulp.dest('dist'))
 });
