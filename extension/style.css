@@ -13,5 +13,16 @@ html, body {
 #photoCredit {
   position: absolute;
   bottom: 1em;
+  right: 1em;
+}
+#reload {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 1em;
   left: 1em;
+  padding: 8px 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  border-color: black;
 }

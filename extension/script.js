@@ -1,14 +1,25 @@
+const currentTime = (new Date()).getTime();
 const getImgsFile = (url, callback) => {
-  const xhr = new XMLHttpRequest();
-  xhr.open('GET', url);
-  xhr.onload = function() {
-    if (xhr.status === 200) {
-      callback(JSON.parse(xhr.responseText));
+  chrome.storage.sync.get(['lastLoaded'], function(result) {
+    if(result.lastLoaded - currentTime > 86400000) {
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', url);
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          const imgLinks = JSON.parse(xhr.responseText);
+          chrome.storage.sync.set({
+            lastLoaded: currentTime,
+            landscapeLinks: imgLinks['landscape'],
+            portraitLinks: imgLinks['portrait'],
+            index: 0,
+          }, callback());
+        }
+      };
+      xhr.send();
     } else {
-      callback(false);
+      callback();
     }
-  };
-  xhr.send();
+  });
 }
 const getScreenOrientation = () => {
   const isLandscape = matchMedia("(orientation: landscape)").matches;
@@ -26,10 +37,11 @@ const setPhotoCredit = (img) => {
   nameSpan.innerHTML = img.name;
   photoCreditSection.style.display = 'inline'
 }
-const setup = (imgsData) => {
-  if(imgsData) {
+const loadNewImg = () => {
+  chrome.storage.sync.get(['landscapeLinks', 'portraitLinks', 'index'], function(result) {
+    console.log(result);
     const orientation = getScreenOrientation();
-    const img = imgsData[orientation][randomInRange(0, 29)];
+    const img = orientation === 'landscape' ? result['landscapeLinks'][result['index']] : result['portraitLinks'][result['index']];
     if(orientation === 'landscape') {
       img.url += '&w=1000'
     } else {
@@ -39,7 +51,21 @@ const setup = (imgsData) => {
     photoElement.style.backgroundImage = 'url("' + img.url + '")';
     photoElement.setAttribute('aria-label', img.description);
     setPhotoCredit(img);
-  }
+  });
 }
-
+const updateIndex = () => {
+  chrome.storage.sync.get(['index'], function(result) {
+    let newIndex = result.index + 1;
+    if(newIndex > 29) {
+      newIndex = 0;
+    }
+    chrome.storage.sync.set({
+      index: newIndex,
+    }, loadNewImg());
+  });
+}
+const setup = () => {
+  loadNewImg();
+  document.getElementById('reload').addEventListener('click', updateIndex);
+}
 getImgsFile('unsplashLinks.json', setup);
