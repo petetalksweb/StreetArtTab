@@ -35,5 +35,3 @@ def lambdaHandler(event, context):
     repo = g.get_repo('petetalksweb/StreetArtTab')
     contents = repo.get_contents('unsplashLinks.json', ref='gh-pages')
     repo.update_file(contents.path, 'new links', new_links, contents.sha, branch='gh-pages')
-
-lambdaHandler(0, 0)
