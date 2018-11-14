@@ -39,7 +39,6 @@ const setPhotoCredit = (img) => {
 }
 const loadNewImg = () => {
   chrome.storage.sync.get(['landscapeLinks', 'portraitLinks', 'index'], function(result) {
-    console.log(result);
     const orientation = getScreenOrientation();
     const img = orientation === 'landscape' ? result['landscapeLinks'][result['index']] : result['portraitLinks'][result['index']];
     if(orientation === 'landscape') {
