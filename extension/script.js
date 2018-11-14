@@ -67,4 +67,4 @@ const setup = () => {
   loadNewImg();
   document.getElementById('reload').addEventListener('click', updateIndex);
 }
-getImgsFile('unsplashLinks.json', setup);
+getImgsFile('https://streetarttab.com/unsplashLinks.json', setup);
