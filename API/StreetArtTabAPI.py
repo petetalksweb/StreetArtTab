@@ -21,16 +21,19 @@ def fetch_new_imgs(unsplash_id, orientation):
     url += '&orientation=' + orientation
     return requests.get(url)
 
-credentials = 0
-with open('credentials.json') as f:
-    credentials = json.load(f)
+def lambdaHandler(event, context):
+    credentials = 0
+    with open('credentials.json') as f:
+        credentials = json.load(f)
 
-new_links = json.dumps({
-    'landscape': create_new_img_objs(fetch_new_imgs(credentials['unsplash'], 'landscape')),
-    'portrait': create_new_img_objs(fetch_new_imgs(credentials['unsplash'], 'portrait')),
-})
+    new_links = json.dumps({
+        'landscape': create_new_img_objs(fetch_new_imgs(credentials['unsplash'], 'landscape')),
+        'portrait': create_new_img_objs(fetch_new_imgs(credentials['unsplash'], 'portrait')),
+    })
 
-g = Github(credentials['github'])
-repo = g.get_repo('petetalksweb/StreetArtTab')
-contents = repo.get_contents('unsplashLinks.json', ref='gh-pages')
-repo.update_file(contents.path, 'new links', new_links, contents.sha, branch='gh-pages')
+    g = Github(credentials['github'])
+    repo = g.get_repo('petetalksweb/StreetArtTab')
+    contents = repo.get_contents('unsplashLinks.json', ref='gh-pages')
+    repo.update_file(contents.path, 'new links', new_links, contents.sha, branch='gh-pages')
+
+lambdaHandler(0, 0)
