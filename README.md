@@ -10,7 +10,7 @@ street art image.
 
 ![image](https://user-images.githubusercontent.com/3345162/48524418-cfb60480-e845-11e8-9475-f8c02de8ab80.png)
 
-## How are images selected
+## How are images selected?
 
 The images displayed are hand-picked by me and saved into this [Unsplash collection](https://unsplash.com/collections/3274043/street-art).
 If there is an image you would like displayed, please upload it to Unsplash and email the Unsplash link to [streetarttab@gmail.com](mailto:streetarttab@gmail.com).
@@ -19,7 +19,7 @@ If there is an image you would like displayed, please upload it to Unsplash and 
 
 You clearly have bigger issues than what shows up on your new tab page... but for now just go ahead and set [streetarttab.com](https://streetarttab.com/) as your homepage.
 
-## How it works
+## How does it work?
 
 [Unsplash](https://unsplash.com/) is an amazing site, that provides:
 
