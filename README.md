@@ -31,7 +31,7 @@ Now, this free API, does have rate limits, and since I do not want to risk havin
 extension (or more maliciously by someone stealing my API key and using it for their applications), I had to set it up so that
 the Unsplash API was only called a certain number of times.
 
-Enter [AWS Lambda](https://aws.amazon.com/free/webapps/?sc_channel=PS&sc_campaign=acquisition_US&sc_publisher=google&sc_medium=ACQ-P%7CPS-GO%7CBrand%7CDesktop%7CSU%7CCompute%7CLambda%7CUS%7CEN%7CText&sc_content=lambda_e&sc_detail=aws%20lambda&sc_category=Compute&sc_segment=293647287583&sc_matchtype=e&sc_country=US&s_kwcid=AL!4422!3!293647287583!e!!g!!aws%20lambda&ef_id=CjwKCAiArK_fBRABEiwA0gOOc0AwtmO9vIaIxjmDcwQqLGN0uqgaAvlCX1KsNkJjHvDm9l37l-YweRoClvwQAvD_BwE:G:s).
+Enter [AWS Lambda](https://aws.amazon.com/lambda/?nc2=h_m1).
 
 Using Python and AWS Lambda, I easily made a script that will call the Unsplash API and get 30 random landscape oriented, 
 and 30 random portrait oriented images from my street art images collection. Then, I set up an [Amazon CloudWatch](https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html) 
