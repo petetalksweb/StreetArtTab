@@ -10,6 +10,10 @@ street art image.
 
 ![image](https://user-images.githubusercontent.com/3345162/48565145-75f12100-e8bd-11e8-922b-7bcffdf818c3.png)
 
+## Where can I find it?
+
+[Here](https://chrome.google.com/webstore/detail/street-art-tab/ebjknfneccjdmkjccpoddhmpciomphok?utm_source=chrome-ntp-icon).
+
 ## How are images selected?
 
 The images displayed are hand-picked by me and saved into this [Unsplash collection](https://unsplash.com/collections/3274043/street-art).
