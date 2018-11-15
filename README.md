@@ -2,7 +2,7 @@
 
 I like street art, always have, probably always will.
 
-As it is, Google Chrome's default new tab screen is more likely to convince me to click on the link to [Twitter](https://twitter.com/PeteTalksWeb/) than
+As it is, Google Chrome's default new tab screen is more likely to convince me to click on the link to <a href="https://twitter.com/PeteTalksWeb/" target="_blank">Twitter</a> than
 it is to help me be productive.
 
 Ergo: Street Art Tab, a Google Chrome extension that replaces Chrome's default new tab with a ~~in my opinion~~ beautiful 
