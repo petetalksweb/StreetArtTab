@@ -17,7 +17,7 @@ If there is an image you would like displayed, please upload it to Unsplash and 
 
 ## What if I don't use Google Chrome?
 
-Go ahead and just set [streetarttab.com](https://streetarttab.com/) as your homepage then!
+You clearly have bigger issues than worrying about what shows up on your new tab page... but for now just go ahead and set [streetarttab.com](https://streetarttab.com/) as your homepage.
 
 ## How it works
 
