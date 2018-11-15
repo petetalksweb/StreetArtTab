@@ -8,7 +8,7 @@ it is to help me be productive.
 Ergo: Street Art Tab, a Google Chrome extension that replaces Chrome's default new tab with a ~~in my opinion~~ beautiful 
 street art image.
 
-![image](https://user-images.githubusercontent.com/3345162/48524418-cfb60480-e845-11e8-9475-f8c02de8ab80.png)
+![image](https://user-images.githubusercontent.com/3345162/48565145-75f12100-e8bd-11e8-922b-7bcffdf818c3.png)
 
 ## How are images selected?
 
