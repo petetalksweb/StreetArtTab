@@ -12,16 +12,16 @@ street art image.
 
 ## Where can I find it?
 
-[Here](https://chrome.google.com/webstore/detail/street-art-tab/ebjknfneccjdmkjccpoddhmpciomphok?utm_source=chrome-ntp-icon).
+[Here](https://chrome.google.com/webstore/detail/street-art-tab/ebjknfneccjdmkjccpoddhmpciomphok?utm_source=chrome-ntp-icon), in the Chrome Webstore.
+
+## What if I don't use Google Chrome?
+
+You clearly have bigger issues than what shows up on your new tab page... but for now just go ahead and set [streetarttab.com](https://streetarttab.com/) as your homepage.
 
 ## How are images selected?
 
 The images displayed are hand-picked by me and saved into this [Unsplash collection](https://unsplash.com/collections/3274043/street-art).
 If there is an image you would like displayed, please upload it to Unsplash and email the Unsplash link to [streetarttab@gmail.com](mailto:streetarttab@gmail.com).
-
-## What if I don't use Google Chrome?
-
-You clearly have bigger issues than what shows up on your new tab page... but for now just go ahead and set [streetarttab.com](https://streetarttab.com/) as your homepage.
 
 ## How does it work?
 
