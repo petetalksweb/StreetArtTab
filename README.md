@@ -51,5 +51,5 @@ whenever their image is displayed on the extension and website.
 
 The extension uses [Font Awesome](https://fontawesome.com/)'s redo icon. Check out their license [here](https://fontawesome.com/license).
 
-The image displayed in the screenshot taken for this readme was taken by Mark Hayward. Check out his Unsplash portfolio [here](https://unsplash.com/@mhayward).
+The image displayed in the screenshot taken for this readme, and used as the thumbnail for [Open Graph tags](http://ogp.me/), was taken by Mark Hayward. Check out his Unsplash portfolio [here](https://unsplash.com/@mhayward).
 
