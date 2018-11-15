@@ -41,7 +41,7 @@ Now that I am pulling my image information for free, where do I host this inform
 [GitHub Pages](https://pages.github.com/). 
 
 Just add a couple lines to my AWS Lambda function that use [PyGitHub](https://github.com/PyGithub/PyGithub)
-to commit the new image data as a JSON file to my gh-pages branch, and vualá, I have a [free, constantly updating, JSON file](https://streetarttab.com/unsplashLinks.json)
+to commit the new image data as a JSON file on my gh-pages branch, and vualá, I have a [free, constantly updating, JSON file](https://streetarttab.com/unsplashLinks.json)
 of hand picked street art images for my extension to pull.
 
 ## Attributions
